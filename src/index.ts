@@ -2,6 +2,7 @@ import MapView, {
   AnimatedMapView as Animated,
   MAP_TYPES,
   enableLatestRenderer,
+  MapViewProps,
 } from './MapView';
 import Marker from './MapMarker';
 import Overlay from './MapOverlay';
@@ -19,9 +20,12 @@ export {default as AnimatedRegion} from './AnimatedRegion';
 export {default as Geojson} from './Geojson';
 
 export {Marker, Overlay};
+export type {MapViewProps};
 export {Animated, MAP_TYPES, enableLatestRenderer};
 
 export * from './ProviderConstants';
+export * from './MapView.types';
+export * from './sharedTypes';
 
 export const MarkerAnimated = Marker.Animated;
 export const OverlayAnimated = Overlay.Animated;

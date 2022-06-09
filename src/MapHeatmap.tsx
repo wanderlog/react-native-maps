@@ -8,7 +8,8 @@ import decorateMapComponent, {
   UIManagerCommand,
   USES_DEFAULT_IMPLEMENTATION,
 } from './decorateMapComponent';
-import {LatLng, Modify} from './sharedTypes';
+import {LatLng} from './sharedTypes';
+import {Modify} from './sharedTypesInternal';
 
 type Props = ViewProps & {
   gradient?: {

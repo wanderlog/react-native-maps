@@ -17,7 +17,8 @@ import decorateMapComponent, {
   UIManagerCommand,
   USES_DEFAULT_IMPLEMENTATION,
 } from './decorateMapComponent';
-import {LatLng, Modify, Point} from './sharedTypes';
+import {LatLng, Point} from './sharedTypes';
+import {Modify} from './sharedTypesInternal';
 
 type Props = ViewProps & {
   /**

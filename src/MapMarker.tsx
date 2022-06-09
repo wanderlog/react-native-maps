@@ -28,9 +28,9 @@ import {
   MarkerDragStartEndEvent,
   MarkerPressEvent,
   MarkerSelectEvent,
-  Modify,
   Point,
 } from './sharedTypes';
+import {Modify} from './sharedTypesInternal';
 
 export type Props = ViewProps & {
   /**
