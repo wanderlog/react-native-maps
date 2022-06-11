@@ -1018,13 +1018,15 @@ class MapView extends React.Component<MapViewProps, State> {
       props = {
         region: null,
         initialRegion: null,
-        onChange: this._onChange,
-        onMapReady: this._onMapReady,
         ref: this.map,
         customMapStyleString: this.props.customMapStyle
           ? JSON.stringify(this.props.customMapStyle)
           : undefined,
+        onChange: this._onChange,
         ...this.props,
+        // Note: onMapReady is placed after this.props because
+        // we call this.props.onMapReady in this._onMapReady
+        onMapReady: this._onMapReady,
       };
       if (
         Platform.OS === 'ios' &&
