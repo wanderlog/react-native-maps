@@ -1094,11 +1094,11 @@ class MapView extends React.Component<MapViewProps, State, SnapShot> {
       props = {
         region: null,
         initialRegion: null,
+        ref: this.map,
+        ...this.props,
         onChange: this._onChange,
         onMapReady: this._onMapReady,
         onLayout: this._onLayout,
-        ref: this.map,
-        ...this.props,
       };
       if (
         Platform.OS === 'ios' &&
